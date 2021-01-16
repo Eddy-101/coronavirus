@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+$green: #035755;
+$red:#FF383D;
+$black: #4B4F51;
+$pink: rgba(250, 86, 82, 0.15);
+$white:#E5E5E5;
+/* mixins */
+@mixin should_card ($state) {
+    
+    width: 100%;
+    display: $state;
+    margin-top: 50px;
+    
+    &-img {
+        margin-right:20px;
+        margin-top: 105px;
+    }
+    &-text{
+        margin-top: 120px;
+        &-title {
+            color: $green;
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        &-des {
+            color: $black;
+            font-size: 18px;
+            line-height: 38.78px;
+        }
+    }
+}
+@mixin should_image($state) {
+    display: $state;
+    width: 100%;
+    text-align: center;
+}
+/* Backgrounds */
+.bg-viruspink {
+    background: url(../images/virus-pink/virus-pink.svg) no-repeat right 60%, url(../images/virus-pink/virus-pink_small.svg) no-repeat 97% 100%;
+}
+.bg-viruspinksmall {
+    background: url(../images/virus-pink/virus-pink.svg) no-repeat left 100%;
+}
+.bg-virusgreen {
+    background: url(../images/virus-green/virus-green.svg) no-repeat left 25%, url(../images/virus-pink/virus-pink.svg) no-repeat right 90%, url(../images/virus-green/virus-greensmall.svg) no-repeat 98% 77%;
+}
+.bg-particles {
+    background: url(../images/partycles/partycle.svg) no-repeat right 100%, url(../images/partycles/partycle-small.svg) no-repeat left 80%;
+}
+.bg-pink_trans {
+    background: url(../images/virus-pink/virus-pink_trans.svg) no-repeat right 100%, url(../images/virus-pink/virus-pink_transmall.svg) no-repeat 95% 60%;
+}
+/* logo */
+.logo {
+    padding: 30px 10px;
+}
+
+/* margins */
+.marginb{
+    margin-bottom: 148px;
+}
+.marginb2{
+    margin-bottom: 50px;
+}
+/* button responsive */
+.button_nav{
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-top: 40px;
+    &-1 {
+        margin-top: 10px;
+        border-bottom: 2px solid $red;
+    }
+
+    &-2 {
+        margin-top: 10px;
+        border-bottom: 2px solid $red;
+    }
+
+    &-3 {
+        margin-top: 10px;
+        border-bottom: 2px solid $red;
+    }
+}
+
+@media (max-width:992px) {
+    .button_nav{
+        display: block;
+    }
+}
+/* event nav */
+.transparencia {
+    display: flex;
+    background-color: rgba(250, 86, 82, 0.15);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    top: 0;
+    list-style: none;
+    color: $green;
+    margin: 30px 30px;
+}
+
+/* navegation */
+.nav {
+
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &-enlace {
+        font-family: sans-serif;
+        margin: 0px 20px;
+        text-decoration: none;
+        color: $green;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    &-enlace:hover {
+        color: $red;
+        text-decoration: none;
+    }
+
+    &-button {
+        right: 0px;
+        font-size: 14px;
+        color:$red;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 14px 35px;
+        border: 2px solid $red;
+        border-radius: 30px;
+        font-family:sans-serif;
+    }
+
+    &-button:hover {
+        text-decoration: none;
+        color: $red;
+    }
+}
+
+@media (max-width:992px) {
+    .nav {
+        display: none;
+    }
+}
+
+/* left_Girl */
+.left_girl {
+    padding-top: 250px;
+    padding-bottom: 200px;
+
+    &-title {
+        color: $red;
+        font-size: 28px;
+        font-weight: 700;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+
+    &-title2 {
+        color: $green;
+        font-size: 43px;
+        font-family: 'Red Hat Display', sans-serif;
+        line-height: 63px;
+    }
+
+    &-description {
+        color: $black;
+        font-family: 'Archivo', sans-serif;
+        font-size: 18px;
+        line-height: 40px;
+        margin-top: 29px;
+    }
+
+    &-button {
+        margin-top: 73px;
+
+        &-enlace {
+            color: #FFFFFF;
+            background-color: $red;
+            padding: 20px 55px;
+            font-size: 20px;
+            border: 2px solid $red;
+            border-radius: 65px;
+            text-decoration: none;
+            font-weight: 700;
+            margin: 39px 0px;
+        }
+
+        &-enlace:hover {
+            color: #FFFFFF;
+        }
+    }
+}
+.right-girl{
+    text-align: center;
+}
+@media (max-width:992px) {
+    .left_girl {
+        text-align: center;
+        padding: 0px;
+        margin: 70px 0px 130px 0px;
+    }
+
+    .right-girl {
+        margin-top:60px
+    }
+}
+
+
+@media (max-width:992px){
+
+    .right {
+        width: 100%;
+        height: 100%;
+
+        &_image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+/* What Is COVID-19 */
+.what-right {
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+
+    &_title {
+        font-family: 'Red Hat Display', sans-serif;
+        color: $red;
+        font-size: 28px;
+    }
+
+    &_title2 {
+        font-family: 'Red Hat Display', sans-serif;
+        color: $green;
+        font-size: 50px;
+    }
+
+    &_des {
+        margin-top: 18px;
+        line-height: 43px;
+        color: $black;
+        font-size: 18px;
+    }
+
+    &_butt {
+        margin-top: 56px;
+
+        &-a {
+            color: $red;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 15px 35px;
+            border-radius: 65px;
+            background-color: $pink;
+        }
+
+        &-a:hover {
+            color: $red;
+        }
+    }
+}
+
+@media(max-width:992px) {
+    .what-right{
+        text-align: center;
+        margin-top: -120px;
+        margin-left: 0px;
+        margin-bottom: 100px;
+    }
+}
+/* Contagion text */
+.contagion_text {
+    width: 100%;
+    text-align: center;
+
+    &-title {
+        color: $red;
+        font-size: 29px;
+    }
+
+    &-title2 {
+        color: $green;
+        font-size: 50px;
+    }
+
+    &-des {
+        margin-top: 31px;
+        margin-bottom: 100px;
+        color: $black;
+        font-size: 18px;
+        line-height: 38.7px;
+    }
+}
+
+/* Contagion Cards */
+.contagion_card {
+
+    padding-top: 65px;
+    border-bottom: 4px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+    
+    &-img {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        &-hands{
+            margin-top: -45px;
+        }
+    }
+
+    &-text {
+
+        margin-top: 55px;
+        width: 100%;
+        text-align: center;
+        
+        &-title {
+            color: $green;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        &-des {
+            text-align: center;
+            color: $black;
+            font-size: 15px;
+            line-height: 33.3px;
+            margin-top: 18px;
+            margin-bottom: 60px;
+        }
+    }
+}
+.contagion_card:hover {
+
+    border-bottom: 4px solid $red;
+}
+/* Symptomps */
+.symptopms_text{
+
+    width: 100%;
+    text-align: center;
+    
+    &-title {
+        font-family: 'Red Hat Display';
+        color: $red;
+        font-size: 29px;
+    }
+
+    &-title2 {
+        font-family: 'Red Hat Display';
+        color: $green;
+        font-size: 50px;
+    }
+
+    &-des {
+        margin-top: 31px;
+        line-height: 38.7px;
+        color: $black;
+        font-size: 18px;
+    }
+}
+
+.symptomps_image {
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* What Should We Do */
+.should_text {
+    width: 100%;
+    text-align: center;
+    
+    &-title {
+        color: $red;
+        font-size: 29px;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+
+    &-title2 {
+        color: $green;
+        font-size: 50px;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+
+    &-des { 
+        color: $black;
+        font-size: 18px;
+        line-height: 38.7px;
+        margin-top: 31px;
+    }
+}
+
+.should_card {
+    @include should_card(flex)
+}
+
+.should_image {
+    @include should_image(block)
+}
+
+@media (max-width:992px) {
+    .should_text{
+        margin-bottom: -140px;
+    }
+}
+/* footer */    
+.map{
+    position: relative;
+
+    &-plu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:-55px;
+        left: 58px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 5px 50px rgba(104, 33, 28, 0.1);
+
+        &_plus {
+            padding: 23px 27px;
+        }
+
+        &_less {
+            padding: 23px 27px;
+        }
+
+        &_up {
+            padding: 23px 27px;
+        }
+    }
+
+    &-search {
+        background-color: #FFFFFF;
+        position: absolute;
+        right: 0px;
+        top: -55px;
+        box-shadow: 0px 5px 50px rgba(104, 33, 28, 0.1);
+        
+        &_lup {
+            padding: 22px 24px;
+        }
+    }
+}
+
+.reports {
+    width: 100%;
+}
+
+.help {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+
+    &_title {
+        color: #0C6C44;
+        font-family: 64px;
+        line-height: 70.78px;
+        font-weight: 700;
+    }
+}
+.search {
+    width: 790px;
+    height: 114px;
+    position: relative;
+    margin: 0px auto;
+
+    &_text {
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding-left: 41px;
+        border-radius: 57px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 5px 50px rgba(104, 33, 28, 0.1);
+    }
+
+    &_button {
+        width: 209px;
+        height: 78px;
+        position: absolute;
+        right: 17px;
+        margin: 18px 0px;
+        font-weight: 700;
+        color: #FFFFFF;
+        background-color: $red;
+        border: none;
+        border-radius: 157px;
+    }
+}
+.footer_nav {
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-enlace {
+        color: $green;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0px 20px;
+    }
+
+    &-enlace:hover {
+        color: $green;
+    }
+}
+
+.footer-logo {
+    width: 100%;
+    text-align: center;
+}
+.socials {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}

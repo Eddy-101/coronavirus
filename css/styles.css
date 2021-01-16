@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap");
+/* mixins */
+/* Backgrounds */
+.bg-viruspink {
+  background: url(../images/virus-pink/virus-pink.svg) no-repeat right 60%, url(../images/virus-pink/virus-pink_small.svg) no-repeat 97% 100%;
+}
+
+.bg-viruspinksmall {
+  background: url(../images/virus-pink/virus-pink.svg) no-repeat left 100%;
+}
+
+.bg-virusgreen {
+  background: url(../images/virus-green/virus-green.svg) no-repeat left 25%, url(../images/virus-pink/virus-pink.svg) no-repeat right 90%, url(../images/virus-green/virus-greensmall.svg) no-repeat 98% 77%;
+}
+
+.bg-particles {
+  background: url(../images/partycles/partycle.svg) no-repeat right 100%, url(../images/partycles/partycle-small.svg) no-repeat left 80%;
+}
+
+.bg-pink_trans {
+  background: url(../images/virus-pink/virus-pink_trans.svg) no-repeat right 100%, url(../images/virus-pink/virus-pink_transmall.svg) no-repeat 95% 60%;
+}
+
+/* logo */
+.logo {
+  padding: 30px 10px;
+}
+
+/* margins */
+.marginb {
+  margin-bottom: 148px;
+}
+
+.marginb2 {
+  margin-bottom: 50px;
+}
+
+/* button responsive */
+.button_nav {
+  display: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+.button_nav-1 {
+  margin-top: 10px;
+  border-bottom: 2px solid #FF383D;
+}
+
+.button_nav-2 {
+  margin-top: 10px;
+  border-bottom: 2px solid #FF383D;
+}
+
+.button_nav-3 {
+  margin-top: 10px;
+  border-bottom: 2px solid #FF383D;
+}
+
+@media (max-width: 992px) {
+  .button_nav {
+    display: block;
+  }
+}
+
+/* event nav */
+.transparencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(250, 86, 82, 0.15);
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+  top: 0;
+  list-style: none;
+  color: #035755;
+  margin: 30px 30px;
+}
+
+/* navegation */
+.nav {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-enlace {
+  font-family: sans-serif;
+  margin: 0px 20px;
+  text-decoration: none;
+  color: #035755;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav-enlace:hover {
+  color: #FF383D;
+  text-decoration: none;
+}
+
+.nav-button {
+  right: 0px;
+  font-size: 14px;
+  color: #FF383D;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 35px;
+  border: 2px solid #FF383D;
+  border-radius: 30px;
+  font-family: sans-serif;
+}
+
+.nav-button:hover {
+  text-decoration: none;
+  color: #FF383D;
+}
+
+@media (max-width: 992px) {
+  .nav {
+    display: none;
+  }
+}
+
+/* left_Girl */
+.left_girl {
+  padding-top: 250px;
+  padding-bottom: 200px;
+}
+
+.left_girl-title {
+  color: #FF383D;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.left_girl-title2 {
+  color: #035755;
+  font-size: 43px;
+  font-family: 'Red Hat Display', sans-serif;
+  line-height: 63px;
+}
+
+.left_girl-description {
+  color: #4B4F51;
+  font-family: 'Archivo', sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  margin-top: 29px;
+}
+
+.left_girl-button {
+  margin-top: 73px;
+}
+
+.left_girl-button-enlace {
+  color: #FFFFFF;
+  background-color: #FF383D;
+  padding: 20px 55px;
+  font-size: 20px;
+  border: 2px solid #FF383D;
+  border-radius: 65px;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 39px 0px;
+}
+
+.left_girl-button-enlace:hover {
+  color: #FFFFFF;
+}
+
+.right-girl {
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .left_girl {
+    text-align: center;
+    padding: 0px;
+    margin: 70px 0px 130px 0px;
+  }
+  .right-girl {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .right {
+    width: 100%;
+    height: 100%;
+  }
+  .right_image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* What Is COVID-19 */
+.what-right {
+  width: 100%;
+  height: 100%;
+  margin-left: 50px;
+}
+
+.what-right_title {
+  font-family: 'Red Hat Display', sans-serif;
+  color: #FF383D;
+  font-size: 28px;
+}
+
+.what-right_title2 {
+  font-family: 'Red Hat Display', sans-serif;
+  color: #035755;
+  font-size: 50px;
+}
+
+.what-right_des {
+  margin-top: 18px;
+  line-height: 43px;
+  color: #4B4F51;
+  font-size: 18px;
+}
+
+.what-right_butt {
+  margin-top: 56px;
+}
+
+.what-right_butt-a {
+  color: #FF383D;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px 35px;
+  border-radius: 65px;
+  background-color: rgba(250, 86, 82, 0.15);
+}
+
+.what-right_butt-a:hover {
+  color: #FF383D;
+}
+
+@media (max-width: 992px) {
+  .what-right {
+    text-align: center;
+    margin-top: -120px;
+    margin-left: 0px;
+    margin-bottom: 100px;
+  }
+}
+
+/* Contagion text */
+.contagion_text {
+  width: 100%;
+  text-align: center;
+}
+
+.contagion_text-title {
+  color: #FF383D;
+  font-size: 29px;
+}
+
+.contagion_text-title2 {
+  color: #035755;
+  font-size: 50px;
+}
+
+.contagion_text-des {
+  margin-top: 31px;
+  margin-bottom: 100px;
+  color: #4B4F51;
+  font-size: 18px;
+  line-height: 38.7px;
+}
+
+/* Contagion Cards */
+.contagion_card {
+  padding-top: 65px;
+  border-bottom: 4px solid transparent;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+}
+
+.contagion_card-img {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.contagion_card-img-hands {
+  margin-top: -45px;
+}
+
+.contagion_card-text {
+  margin-top: 55px;
+  width: 100%;
+  text-align: center;
+}
+
+.contagion_card-text-title {
+  color: #035755;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.contagion_card-text-des {
+  text-align: center;
+  color: #4B4F51;
+  font-size: 15px;
+  line-height: 33.3px;
+  margin-top: 18px;
+  margin-bottom: 60px;
+}
+
+.contagion_card:hover {
+  border-bottom: 4px solid #FF383D;
+}
+
+/* Symptomps */
+.symptopms_text {
+  width: 100%;
+  text-align: center;
+}
+
+.symptopms_text-title {
+  font-family: 'Red Hat Display';
+  color: #FF383D;
+  font-size: 29px;
+}
+
+.symptopms_text-title2 {
+  font-family: 'Red Hat Display';
+  color: #035755;
+  font-size: 50px;
+}
+
+.symptopms_text-des {
+  margin-top: 31px;
+  line-height: 38.7px;
+  color: #4B4F51;
+  font-size: 18px;
+}
+
+.symptomps_image {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/* What Should We Do */
+.should_text {
+  width: 100%;
+  text-align: center;
+}
+
+.should_text-title {
+  color: #FF383D;
+  font-size: 29px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.should_text-title2 {
+  color: #035755;
+  font-size: 50px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.should_text-des {
+  color: #4B4F51;
+  font-size: 18px;
+  line-height: 38.7px;
+  margin-top: 31px;
+}
+
+.should_card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.should_card-img {
+  margin-right: 20px;
+  margin-top: 105px;
+}
+
+.should_card-text {
+  margin-top: 120px;
+}
+
+.should_card-text-title {
+  color: #035755;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.should_card-text-des {
+  color: #4B4F51;
+  font-size: 18px;
+  line-height: 38.78px;
+}
+
+.should_image {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .should_text {
+    margin-bottom: -140px;
+  }
+}
+
+/* footer */
+.map {
+  position: relative;
+}
+
+.map-plu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: -55px;
+  left: 58px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 50px rgba(104, 33, 28, 0.1);
+          box-shadow: 0px 5px 50px rgba(104, 33, 28, 0.1);
+}
+
+.map-plu_plus {
+  padding: 23px 27px;
+}
+
+.map-plu_less {
+  padding: 23px 27px;
+}
+
+.map-plu_up {
+  padding: 23px 27px;
+}
+
+.map-search {
+  background-color: #FFFFFF;
+  position: absolute;
+  right: 0px;
+  top: -55px;
+  -webkit-box-shadow: 0px 5px 50px rgba(104, 33, 28, 0.1);
+          box-shadow: 0px 5px 50px rgba(104, 33, 28, 0.1);
+}
+
+.map-search_lup {
+  padding: 22px 24px;
+}
+
+.reports {
+  width: 100%;
+}
+
+.help {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.help_title {
+  color: #0C6C44;
+  font-family: 64px;
+  line-height: 70.78px;
+  font-weight: 700;
+}
+
+.search {
+  width: 790px;
+  height: 114px;
+  position: relative;
+  margin: 0px auto;
+}
+
+.search_text {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 41px;
+  border-radius: 57px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 50px rgba(104, 33, 28, 0.1);
+          box-shadow: 0px 5px 50px rgba(104, 33, 28, 0.1);
+}
+
+.search_button {
+  width: 209px;
+  height: 78px;
+  position: absolute;
+  right: 17px;
+  margin: 18px 0px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #FF383D;
+  border: none;
+  border-radius: 157px;
+}
+
+.footer_nav {
+  margin-top: 15px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_nav-enlace {
+  color: #035755;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0px 20px;
+}
+
+.footer_nav-enlace:hover {
+  color: #035755;
+}
+
+.footer-logo {
+  width: 100%;
+  text-align: center;
+}
+
+.socials {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+/*# sourceMappingURL=styles.css.map */
