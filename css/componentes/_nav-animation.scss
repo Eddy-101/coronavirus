@@ -1,0 +1,22 @@
+/* event nav */
+.transparencia {
+  display: flex;
+  background-color: rgba(250, 86, 82, 0.15);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  top: 0;
+  list-style: none;
+  color: $green;
+  margin: 30px 30px;
+}
+
+@keyframes navbar {
+  0%{
+      transform: scale(100%);
+  }
+  50%{
+      
+  }
+}

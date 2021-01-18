@@ -1,0 +1,32 @@
+/* mixins */
+@mixin should_card ($state) {
+		
+	width: 100%;
+    display: $state;
+    margin-top: 50px;
+    
+    &-img {
+        margin-right:20px;
+        margin-top: 105px;
+    }
+    &-text{
+        margin-top: 120px;
+        &-title {
+            color: $green;
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        &-des {
+            color: $black;
+            font-size: 18px;
+            line-height: 38.78px;
+        }
+    }
+}
+@mixin should_image($state) {
+    display: $state;
+    width: 100%;
+    text-align: center;
+}

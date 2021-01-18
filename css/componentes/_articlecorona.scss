@@ -1,0 +1,46 @@
+.article-covid {
+  padding-top: 250px;
+  padding-bottom: 200px;
+
+  &_covid {
+      color: $red;
+      font-size: 28px;
+      font-weight: 700;
+      font-family: 'Red Hat Display', sans-serif;
+  }
+
+  &_title {
+      color: $green;
+      font-size: 43px;
+      font-family: 'Red Hat Display', sans-serif;
+      line-height: 63px;
+  }
+
+  &_des {
+      color: $black;
+      font-family: 'Archivo', sans-serif;
+      font-size: 18px;
+      line-height: 40px;
+      margin-top: 29px;
+  }
+
+  &-button {
+      margin-top: 73px;
+
+      &-enlace {
+          color: #FFFFFF;
+          background-color: $red;
+          padding: 20px 55px;
+          font-size: 20px;
+          border: 2px solid $red;
+          border-radius: 65px;
+          text-decoration: none;
+          font-weight: 700;
+          margin: 39px 0px;
+      }
+
+      &-enlace:hover {
+          color: #FFFFFF;
+      }
+  }
+}

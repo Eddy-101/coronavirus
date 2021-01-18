@@ -1,0 +1,38 @@
+/* What Should We Do */
+.should_text {
+  width: 100%;
+  text-align: center;
+  
+  &-title {
+      color: $red;
+      font-size: 29px;
+      font-family: 'Red Hat Display', sans-serif;
+  }
+
+  &-title2 {
+      color: $green;
+      font-size: 50px;
+      font-family: 'Red Hat Display', sans-serif;
+  }
+
+  &-des { 
+      color: $black;
+      font-size: 18px;
+      line-height: 38.7px;
+      margin-top: 31px;
+  }
+}
+
+.should_card {
+  @include should_card(flex)
+}
+
+.should_image {
+  @include should_image(block)
+}
+
+@media (max-width:992px) {
+  .should_text{
+      margin-bottom: -140px;
+  }
+}
