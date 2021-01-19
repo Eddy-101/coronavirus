@@ -1,32 +1,77 @@
-/* mixins */
-@mixin should_card ($state) {
-		
-	width: 100%;
-    display: $state;
-    margin-top: 50px;
+/* Contagion Cards */
+.contagion_card {
+    padding-top: 65px;
+    border-bottom: 4px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
     
     &-img {
-        margin-right:20px;
-        margin-top: 105px;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        &-hands{
+            margin-top: -45px;
+        }
     }
-    &-text{
-        margin-top: 120px;
+    
+    &-text {
+        
+        margin-top: 55px;
+        width: 100%;
+        text-align: center;
+        
         &-title {
             color: $green;
-            font-size: 38px;
+            font-size: 25px;
             font-weight: 700;
-            margin-bottom: 20px;
         }
-
+        
         &-des {
+            text-align: center;
             color: $black;
-            font-size: 18px;
-            line-height: 38.78px;
+            font-size: 15px;
+            line-height: 33.3px;
+            margin-top: 18px;
+            margin-bottom: 60px;
         }
     }
 }
-@mixin should_image($state) {
-    display: $state;
-    width: 100%;
-    text-align: center;
+.contagion_card:hover {    
+    border-bottom: 4px solid $red;
+}
+/* What Should We Do Card */
+.cardw {		
+	padding-top: 150px;
+
+	&_img {
+		float: left;
+	}
+
+	&_text {
+		float: right;
+		&-title {
+			color: $green;
+			font-size: 38px;
+			font-weight: 700;
+			margin-bottom: 20px;
+		}
+
+		&-des {	
+			color: $black;	
+			font-size: 18px;	
+			line-height: 38.78px;	
+		}	
+	}
+}
+@media(max-width:992px){
+	.cardw{
+		padding-top: 50px;
+		text-align: center;
+		&_img{
+			float: none;
+		}
+		&_text{
+			float: none;
+		}
+	}
 }

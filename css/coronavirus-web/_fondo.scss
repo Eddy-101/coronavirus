@@ -1,0 +1,15 @@
+.static{
+  display: none;
+}
+.fondo{
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: pink, $alpha: .9);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  z-index: 1200;
+}

@@ -2,7 +2,7 @@
 .map{
   position: relative;
 
-  &-plu {
+  &_plu {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -11,18 +11,10 @@
     background-color: #FFFFFF;
     box-shadow: 0px 5px 50px rgba(104, 33, 28, 0.1);
 
-    &_plus {
+    &-button {
       padding: 23px 27px;
     }
-
-    &_less {
-      padding: 23px 27px;
-    }
-
-    &_up {
-      padding: 23px 27px;
-    }
-}
+  }
 
   &-search {
     background-color: #FFFFFF;
@@ -36,29 +28,16 @@
     }
   }
 }
-
-.reports {
-  width: 100%;
-}
-
-.help {
-  margin-bottom: 30px;
-  width: 100%;
-  text-align: center;
-
-  &_title {
-    color: #0C6C44;
-    font-family: 64px;
-    line-height: 70.78px;
-    font-weight: 700;
-  }
+.help { 
+  color: #0C6C44;
+  line-height: 70.78px;
+  font-weight: 700;
+  
 }
 /* Search */
 .search {
   width: 100%;
   position: relative;
-  margin: 0px auto;
-  text-align: center;
 
   &_text {
     width: 100%;
@@ -83,6 +62,7 @@
     border-radius: 157px;
   }
 }
+
 .footer_nav {
   margin-top: 15px;
   list-style: none;

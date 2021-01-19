@@ -2,8 +2,141 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap");
 /* Variables */
+/* Fondo */
+.static {
+  display: none;
+}
+
+.fondo {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 192, 203, 0.9);
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  z-index: 1200;
+}
+
+/* articles */
+.article_covid {
+  color: #FF383D;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.article_title {
+  color: #035755;
+  font-size: 43px;
+  font-family: 'Red Hat Display', sans-serif;
+  line-height: 63px;
+}
+
+.article_des {
+  color: #4B4F51;
+  font-family: 'Archivo', sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  margin-top: 29px;
+  margin-bottom: 73px;
+}
+
 /* Cards */
-/* mixins */
+/* Contagion Cards */
+.contagion_card {
+  padding-top: 65px;
+  border-bottom: 4px solid transparent;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+}
+
+.contagion_card-img {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.contagion_card-img-hands {
+  margin-top: -45px;
+}
+
+.contagion_card-text {
+  margin-top: 55px;
+  width: 100%;
+  text-align: center;
+}
+
+.contagion_card-text-title {
+  color: #035755;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.contagion_card-text-des {
+  text-align: center;
+  color: #4B4F51;
+  font-size: 15px;
+  line-height: 33.3px;
+  margin-top: 18px;
+  margin-bottom: 60px;
+}
+
+.contagion_card:hover {
+  border-bottom: 4px solid #FF383D;
+}
+
+/* What Should We Do Card */
+.cardw {
+  padding-top: 150px;
+}
+
+.cardw_img {
+  float: left;
+}
+
+.cardw_text {
+  float: right;
+}
+
+.cardw_text-title {
+  color: #035755;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cardw_text-des {
+  color: #4B4F51;
+  font-size: 18px;
+  line-height: 38.78px;
+}
+
+@media (max-width: 992px) {
+  .cardw {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .cardw_img {
+    float: none;
+  }
+  .cardw_text {
+    float: none;
+  }
+}
+
 /* Backgrounds */
 .bg-viruspink {
   background: url(../images/virus-pink/virus-pink.svg) no-repeat right 60%, url(../images/virus-pink/virus-pink_small.svg) no-repeat 97% 100%;
@@ -67,43 +200,52 @@
   }
 }
 
-/* Animations */
-/* event nav */
-.transparencia {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+/* button red */
+.button_red {
+  right: 0px;
+  font-size: 14px;
+  color: #FF383D;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 35px;
+  border: 2px solid #FF383D;
+  border-radius: 30px;
+  font-family: sans-serif;
+}
+
+.button_red:hover {
+  text-decoration: none;
+  color: #FF383D;
+}
+
+/* button background red */
+.buttonbg_red {
+  color: #FFFFFF;
+  background-color: #FF383D;
+  padding: 20px 55px;
+  font-size: 20px;
+  border: 2px solid #FF383D;
+  border-radius: 65px;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 39px 0px;
+}
+
+.buttonbg_red:hover {
+  color: #FFFFFF;
+}
+
+/* button background white */
+.buttonbg_pink {
+  color: #FF383D;
   background-color: rgba(250, 86, 82, 0.15);
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 200px;
-  top: 0;
-  list-style: none;
-  color: #035755;
-  margin: 30px 30px;
-}
-
-@-webkit-keyframes navbar {
-  0% {
-    -webkit-transform: scale(100%);
-            transform: scale(100%);
-  }
-  50% {
-  }
-}
-
-@keyframes navbar {
-  0% {
-    -webkit-transform: scale(100%);
-            transform: scale(100%);
-  }
-  50% {
-  }
+  padding: 20px 55px;
+  font-size: 20px;
+  border: none;
+  border-radius: 65px;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 39px 0px;
 }
 
 /* Header */
@@ -141,23 +283,6 @@
   text-decoration: none;
 }
 
-.nav-button {
-  right: 0px;
-  font-size: 14px;
-  color: #FF383D;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 14px 35px;
-  border: 2px solid #FF383D;
-  border-radius: 30px;
-  font-family: sans-serif;
-}
-
-.nav-button:hover {
-  text-decoration: none;
-  color: #FF383D;
-}
-
 @media (max-width: 992px) {
   .nav {
     display: none;
@@ -168,48 +293,6 @@
 .left_girl {
   padding-top: 250px;
   padding-bottom: 200px;
-}
-
-.left_girl-title {
-  color: #FF383D;
-  font-size: 28px;
-  font-weight: 700;
-  font-family: 'Red Hat Display', sans-serif;
-}
-
-.left_girl-title2 {
-  color: #035755;
-  font-size: 43px;
-  font-family: 'Red Hat Display', sans-serif;
-  line-height: 63px;
-}
-
-.left_girl-description {
-  color: #4B4F51;
-  font-family: 'Archivo', sans-serif;
-  font-size: 18px;
-  line-height: 40px;
-  margin-top: 29px;
-}
-
-.left_girl-button {
-  margin-top: 73px;
-}
-
-.left_girl-button-enlace {
-  color: #FFFFFF;
-  background-color: #FF383D;
-  padding: 20px 55px;
-  font-size: 20px;
-  border: 2px solid #FF383D;
-  border-radius: 65px;
-  text-decoration: none;
-  font-weight: 700;
-  margin: 39px 0px;
-}
-
-.left_girl-button-enlace:hover {
-  color: #FFFFFF;
 }
 
 .right-girl {
@@ -240,222 +323,16 @@
 
 /* What Is Covid-19 */
 /* What Is COVID-19 */
-.what-right {
-  width: 100%;
-  height: 100%;
+.what_right {
   margin-left: 50px;
 }
 
-.what-right_title {
-  font-family: 'Red Hat Display', sans-serif;
-  color: #FF383D;
-  font-size: 28px;
-}
-
-.what-right_title2 {
-  font-family: 'Red Hat Display', sans-serif;
-  color: #035755;
-  font-size: 50px;
-}
-
-.what-right_des {
-  margin-top: 18px;
-  line-height: 43px;
-  color: #4B4F51;
-  font-size: 18px;
-}
-
-.what-right_butt {
-  margin-top: 56px;
-}
-
-.what-right_butt-a {
-  color: #FF383D;
-  font-size: 18px;
-  text-decoration: none;
-  padding: 15px 35px;
-  border-radius: 65px;
-  background-color: rgba(250, 86, 82, 0.15);
-}
-
-.what-right_butt-a:hover {
-  color: #FF383D;
-}
-
 @media (max-width: 992px) {
-  .what-right {
+  .what_right {
     text-align: center;
     margin-top: -120px;
     margin-left: 0px;
-    margin-bottom: 100px;
-  }
-}
-
-/* Contagion */
-/* Contagion text */
-.contagion_text {
-  width: 100%;
-  text-align: center;
-}
-
-.contagion_text-title {
-  color: #FF383D;
-  font-size: 29px;
-}
-
-.contagion_text-title2 {
-  color: #035755;
-  font-size: 50px;
-}
-
-.contagion_text-des {
-  margin-top: 31px;
-  margin-bottom: 100px;
-  color: #4B4F51;
-  font-size: 18px;
-  line-height: 38.7px;
-}
-
-/* Contagion Cards */
-.contagion_card {
-  padding-top: 65px;
-  border-bottom: 4px solid transparent;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
-}
-
-.contagion_card-img {
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-}
-
-.contagion_card-img-hands {
-  margin-top: -45px;
-}
-
-.contagion_card-text {
-  margin-top: 55px;
-  width: 100%;
-  text-align: center;
-}
-
-.contagion_card-text-title {
-  color: #035755;
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.contagion_card-text-des {
-  text-align: center;
-  color: #4B4F51;
-  font-size: 15px;
-  line-height: 33.3px;
-  margin-top: 18px;
-  margin-bottom: 60px;
-}
-
-.contagion_card:hover {
-  border-bottom: 4px solid #FF383D;
-}
-
-/* Symptomps */
-.symptopms_text {
-  width: 100%;
-  text-align: center;
-}
-
-.symptopms_text-title {
-  font-family: 'Red Hat Display';
-  color: #FF383D;
-  font-size: 29px;
-}
-
-.symptopms_text-title2 {
-  font-family: 'Red Hat Display';
-  color: #035755;
-  font-size: 50px;
-}
-
-.symptopms_text-des {
-  margin-top: 31px;
-  line-height: 38.7px;
-  color: #4B4F51;
-  font-size: 18px;
-}
-
-.symptomps_image {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-/* What Should We Do */
-/* What Should We Do */
-.should_text {
-  width: 100%;
-  text-align: center;
-}
-
-.should_text-title {
-  color: #FF383D;
-  font-size: 29px;
-  font-family: 'Red Hat Display', sans-serif;
-}
-
-.should_text-title2 {
-  color: #035755;
-  font-size: 50px;
-  font-family: 'Red Hat Display', sans-serif;
-}
-
-.should_text-des {
-  color: #4B4F51;
-  font-size: 18px;
-  line-height: 38.7px;
-  margin-top: 31px;
-}
-
-.should_card {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
-}
-
-.should_card-img {
-  margin-right: 20px;
-  margin-top: 105px;
-}
-
-.should_card-text {
-  margin-top: 120px;
-}
-
-.should_card-text-title {
-  color: #035755;
-  font-size: 38px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.should_card-text-des {
-  color: #4B4F51;
-  font-size: 18px;
-  line-height: 38.78px;
-}
-
-.should_image {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-@media (max-width: 992px) {
-  .should_text {
-    margin-bottom: -140px;
+    margin-bottom: 250px;
   }
 }
 
@@ -465,7 +342,7 @@
   position: relative;
 }
 
-.map-plu {
+.map_plu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,15 +358,7 @@
           box-shadow: 0px 5px 50px rgba(104, 33, 28, 0.1);
 }
 
-.map-plu_plus {
-  padding: 23px 27px;
-}
-
-.map-plu_less {
-  padding: 23px 27px;
-}
-
-.map-plu_up {
+.map_plu-button {
   padding: 23px 27px;
 }
 
@@ -506,19 +375,8 @@
   padding: 22px 24px;
 }
 
-.reports {
-  width: 100%;
-}
-
 .help {
-  margin-bottom: 30px;
-  width: 100%;
-  text-align: center;
-}
-
-.help_title {
   color: #0C6C44;
-  font-family: 64px;
   line-height: 70.78px;
   font-weight: 700;
 }
@@ -527,8 +385,6 @@
 .search {
   width: 100%;
   position: relative;
-  margin: 0px auto;
-  text-align: center;
 }
 
 .search_text {

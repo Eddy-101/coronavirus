@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
 /* Variables */
 @import './componentes/variables';
+/* Fondo */
+@import './coronavirus-web/fondo';
+/* articles */
+@import './componentes/articles';
 /* Cards */
 @import './componentes/cards';
 /* Backgrounds */
@@ -11,17 +15,9 @@
 @import './componentes/margins';
 /* Button Responsive */
 @import './componentes/buttons';
-/* Animations */
-@import './componentes/nav-animation';
 /* Header */
 @import './coronavirus-web/header';
 /* What Is Covid-19 */
 @import './coronavirus-web/wiscovid';
-/* Contagion */
-@import './coronavirus-web/contagion';    
-/* Symptomps */
-@import './coronavirus-web/symptomps';
-/* What Should We Do */
-@import './coronavirus-web/wshould';
 /* Footer */
 @import	'./coronavirus-web/footer';

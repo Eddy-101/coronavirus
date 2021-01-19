@@ -6,19 +6,20 @@
   height: 40px;
   margin-left: auto;
   margin-top: 40px;
+
   &-1 {
-      margin-top: 10px;
-      border-bottom: 2px solid $red;
+    margin-top: 10px;
+    border-bottom: 2px solid $red;    
   }
 
   &-2 {
-      margin-top: 10px;
-      border-bottom: 2px solid $red;
+    margin-top: 10px;
+    border-bottom: 2px solid $red;
   }
 
   &-3 {
-      margin-top: 10px;
-      border-bottom: 2px solid $red;
+    margin-top: 10px;
+    border-bottom: 2px solid $red;
   }
 }
 
@@ -26,4 +27,51 @@
   .button_nav{
       display: block;
   }
+}
+
+/* button red */
+.button_red {
+  right: 0px;
+  font-size: 14px;
+  color:$red;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 35px;
+  border: 2px solid $red;
+  border-radius: 30px;
+  font-family:sans-serif;
+}
+
+.button_red:hover {
+  text-decoration: none;
+  color: $red;
+}
+
+/* button background red */
+.buttonbg_red {
+  color: #FFFFFF;
+  background-color: $red;
+  padding: 20px 55px;
+  font-size: 20px;
+  border: 2px solid $red;
+  border-radius: 65px;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 39px 0px;
+}
+
+.buttonbg_red:hover {
+  color: #FFFFFF;
+}
+/* button background white */
+.buttonbg_pink {
+  color: $red;
+  background-color: $pink;
+  padding: 20px 55px;
+  font-size: 20px;
+  border: none;
+  border-radius: 65px;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 39px 0px;
 }

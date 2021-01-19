@@ -1,6 +1,7 @@
-let nav = document.getElementById("nav");
-let button = document.getElementById("button");
-button.addEventListener("click", ()=>{
-    nav.classList.toggle("transparencia");
-    nav.classList.toggle("nav");
-});
+const fondo = document.getElementById('fondo');
+document.getElementById('button').addEventListener('click', ()=>{
+    fondo.classList.toggle("fondo");
+})
+document.getElementById('fondo').addEventListener('click',()=>{
+    fondo.classList.remove("fondo");
+})
